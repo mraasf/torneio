@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Torneio de Futebol</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilo.css">
+        
+    </head>
+    <body>
+        <div class="container"><h1 align="center">Torneio de Futebol</h1></div>
+        <div class="container">
+           
+             <div class="row">
+               <div class="col-12" align="justify">
+                   <p>Instruções: Adicione os clubes no formato "nome do clube;Estado" e clique em adicionar times</p>
+                   <p>São geradas duas tabelas de todos contra todos, uma de turno de ida e uma de returno colocando todos os times contra todos duas vezes. Uma jogando em casa e outra fora de casa </p>   
+                   <p>As partidas e os resultados são gerados automaticamente. O resultado é mostrado na coluna "vencedor" e os pontos são somados automaticamente </p>
+                    <p>No quadro a direita é mostrado o rank em ordem de mais pontos para menos pontos </p>
+               </div>
+               
+           </div>
+              
+            <div class="row">
+               <div class="col-8" align="center">
+                
+                  Entre com os times aqui <br>
+                   <textarea name="txtTimes" id="txtTimes" cols="50" rows="9"></textarea><br>
+                <button id="botao">adicionar times</button>   
+                <button id="limpar">limpar lista</button>
+               </div>
+               <div class="col-4" align="center" id="rank">
+                teste
+                </div>
+               
+           </div>
+           
+           <div class="row" style="height: 40%" id="divIda">
+               <div class="col-12" >
+               Turno de Ida: <br>
+               <table id="turno" style="border: 1px solid green; width: 100%">
+                       <tr>
+                           <th>Partida</th>
+                           <th>Estado</th>
+                           <th>Rodada</th>
+                           <th>Vencedor</th>
+                       </tr>
+                   </table>
+                
+                  <br></div>
+                  
+   
+           </div>
+           
+            <div class="row" style="height: 40%" id="divReturno">
+                <div class="col-12" >
+               Returno: <br>
+               <table id="returno" style="border: 1px solid green; width: 100%">
+                       <tr>
+                           <th>Partida</th>
+                           <th>Estado</th>
+                           <th>Rodada</th>
+                           <th>Vencedor</th>
+                       </tr>
+                   </table>
+                
+                  <br></div>
+            </div>
+           
+           
+            <br>
+        </div>
+    </body>
+    <script src="javascript.js"></script>
+</html>
